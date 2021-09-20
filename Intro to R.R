@@ -4,23 +4,20 @@
 
 # -------------------------------------------------------------------------------------------------------------------------------
 
-# Referência:
+# Referências utilizadas:
 # IMAI, K. Quantitative social science: An introduction. Princeton University Press, 2018.
 # Capítulo 1 - Item 1.3
 
 # -------------------------------------------------------------------------------------------------------------------------------
+# O R Studio
 
-# Apresentação do R Studio
 # Editor -> canto superior esquerdo
 # Console -> canto inferior esquerdo
 # Environment -> canto superior direito
 # Saída -> canto inferior direito 
 
 # -------------------------------------------------------------------------------------------------------------------------------
-# Funções aritméticas
-
-# Com o software R é possível realizar funções aritméticas diretamente no Console
-# Assim, você pode digitar suas operações diretamente como se estivesse utilizando uma calculadora
+# Funções aritméticas - contas e funções básicas
 
 5 + 3
 
@@ -35,13 +32,13 @@
 sqrt(4)
 
 # -------------------------------------------------------------------------------------------------------------------------------
-# Objetos
+# Objetos (ou variáveis)
 
 # O software R guarda informações como objetos com o nome de sua escolha
 # Utilize nomes intuitivos e informativos para que você lembre do que se trata seu objeto
 
 # Regras básicas: nome de objetos não devem começar com números e nem conter espaços
-# O quadro no canto superior direito (Environment) apresenta os objetivos criados no seu projeto
+# Em 'Environment',  voce pode ver os objetivos criados no seu projeto
 
 # Esta é a forma mais simples de colocar dados no R
 # utilize o caracter <- para atribuir valores ao seu objeto
@@ -242,8 +239,8 @@ names(world.pop) <- year
 
 world.pop
 # -------------------------------------------------------------------------------------------------------------------------------
-# Até então inserimos dados de forma manual
-# Na prática utilizamos arquivos de dados quantitativos para fazer nossas análises: chamados de data frame
+# Na prática utilizamos arquivos de dados quantitativos para fazer nossas análises: chamados de data frame.
+# Os dados, até o momento, foram inseridos de forma manual 
 # Software R -> arquivos .csv ou dataR
 # são dados que devem estar apresentados na diposição de uma planilha
 
@@ -251,7 +248,8 @@ world.pop
 # Inserir data frame pelo console do R
 # Necessário verificar em qual dirtetório o R está acessando os seus arquivos
 # Utiliza e função getwd() para visualiza qual o diretório atual
-# o padrão do diretório do R é a pasta Documentos do Windows:  "C:/Users/Ariana/Documents"
+# o padrão do diretório do R é a pasta Documentos do Windows:  "C:/Users/Bruno/Documents"
+# Com a função abaixo, voce pode ver onde está localizado o  seu diretório
 
 getwd()
 
