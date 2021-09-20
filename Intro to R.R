@@ -1,3 +1,4 @@
+# Hello Everyone! I hope that this file could help you guys with the R
 # Intro to R
 # Special thanks to Teacher Ariana Ribeiro Costa
 
