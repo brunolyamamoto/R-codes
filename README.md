@@ -1,4 +1,4 @@
-# r-studio
+# R language codes
 My r-studio repository
 # Hello World! =)
 
