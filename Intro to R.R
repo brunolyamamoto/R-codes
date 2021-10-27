@@ -3,15 +3,18 @@
 
 # -------------------------------------------------------------------------------------------------------------------------------
 
-# Referência:
+# ReferÃªncia:
 # IMAI, K. Quantitative social science: An introduction. Princeton University Press, 2018.
 # Capítulo 1 - Item 1.3
 
 # -------------------------------------------------------------------------------------------------------------------------------
-# Funções aritméticas
 
-# Com o software R é possível realizar funções aritméticas diretamente no Console
-# Assim, você pode digitar suas operações diretamente como se estivesse utilizando uma calculadora
+# Saudações, Pessu! Espero que este arquivo ajude vocês e os introduza ao mundo do R
+
+# FunÃ§Ãµes aritmÃ©ticas
+
+# Com o software R Ã© possÃ­vel realizar funÃ§Ãµes aritmÃ©ticas diretamente no Console
+# Assim, vocÃª pode digitar suas operaÃ§Ãµes diretamente como se estivesse utilizando uma calculadora
 
 5 + 3
 
@@ -28,24 +31,24 @@ sqrt(4)
 # -------------------------------------------------------------------------------------------------------------------------------
 # Objetos
 
-# O software R guarda informações como objetos com o nome de sua escolha
-# Utilize nomes intuitivos e informativos para que você lembre do que se trata seu objeto
+# O software R guarda informaÃ§Ãµes como objetos com o nome de sua escolha
+# Utilize nomes intuitivos e informativos para que vocÃª lembre do que se trata seu objeto
 
-# Regras básicas: nome de objetos não devem começar com números e nem conter espaços
+# Regras bÃ¡sicas: nome de objetos nÃ£o devem comeÃ§ar com nÃºmeros e nem conter espaÃ§os
 # O quadro no canto superior direito (Environment) apresenta os objetivos criados no seu projeto
 
-# Esta é a forma mais simples de colocar dados no R
+# Esta Ã© a forma mais simples de colocar dados no R
 # utilize o caracter <- para atribuir valores ao seu objeto
 
 result <- 5 + 3
 
-# Visualizando o valor atribuído ao objeto: escrevendo o nome do objeto ou com a função print
+# Visualizando o valor atribuÃ­do ao objeto: escrevendo o nome do objeto ou com a funÃ§Ã£o print
 
 result
 print(result)
 
-# Se atribuirmos diferentes valores para o mesmo objeto, o valor do objeto será o último a ser inserido
-# Ou seja, os obejtos são sobrescritos
+# Se atribuirmos diferentes valores para o mesmo objeto, o valor do objeto serÃ¡ o Ãºltimo a ser inserido
+# Ou seja, os obejtos sÃ£o sobrescritos
 
 result <- 5 - 3
 
@@ -54,17 +57,17 @@ result
 print(result)
 
 # Sintaxe do objeto
-# O nome do objeto deve ser digitado de forma idêntica - existe a diferenciação entre letras maiúsculas e minúsculas
+# O nome do objeto deve ser digitado de forma idÃªntica - existe a diferenciaÃ§Ã£o entre letras maiÃºsculas e minÃºsculas
 
 Result
 
 # Comece a interpretar os erros: object 'Result' not found -> confira no Environment os nomes dos objetos criados
 
 
-# Até o momento, os valores atríbuidos aos objetos foram variáveis numéricas
+# AtÃ© o momento, os valores atrÃ­buidos aos objetos foram variÃ¡veis numÃ©ricas
 
-# Os valores inseridos também podem ser texto (string) 
-# Utiliza-se " " (aspas duplas) para sinalizar que o valor a ser atribuído é um texto
+# Os valores inseridos tambÃ©m podem ser texto (string) 
+# Utiliza-se " " (aspas duplas) para sinalizar que o valor a ser atribuÃ­do Ã© um texto
 
 eu <- "bruno"
 otto <- "bobao"
@@ -77,13 +80,13 @@ bruno <- "aluno da FGV-RI"
 
 bruno
 
-# É possível atribuir valores numéricos como uma string
+# Ã‰ possÃ­vel atribuir valores numÃ©ricos como uma string
 
 Result <- "5"
 
 Result
 
-# Não é possível realizar funções aritméticas com strings
+# NÃ£o Ã© possÃ­vel realizar funÃ§Ãµes aritmÃ©ticas com strings
 
 Result/3
 
@@ -103,21 +106,21 @@ class(sqrt)
 # -------------------------------------------------------------------------------------------------------------------------------
 # Vetores
 
-# Dados podem ser atribuídos a um vetor
-# Um vetor ou uma matriz unidimensional simplesmente representa uma coleção 
-# de informações armazenadas em uma ordem específica.
+# Dados podem ser atribuÃ­dos a um vetor
+# Um vetor ou uma matriz unidimensional simplesmente representa uma coleÃ§Ã£o 
+# de informaÃ§Ãµes armazenadas em uma ordem especÃ­fica.
 
-# Para isto utilizados uma função concatenar
-# Para atribuir um vetor de dados que contém múltiplos valores utilizamos vírgulas para separar diferentes elementos
+# Para isto utilizados uma funÃ§Ã£o concatenar
+# Para atribuir um vetor de dados que contÃ©m mÃºltiplos valores utilizamos vÃ­rgulas para separar diferentes elementos
 
-# Utiliza-se a função c() 
-# c é a abrevisção da função concatenar
+# Utiliza-se a funÃ§Ã£o c() 
+# c Ã© a abrevisÃ§Ã£o da funÃ§Ã£o concatenar
 
-# Insere os valores da População Mundial em mil habitantes
+# Insere os valores da PopulaÃ§Ã£o Mundial em mil habitantes
 world.pop <- c(2525779, 3026003, 3691173, 4449049, 5320817, 6127700, 6916183)
 world.pop
 
-# Podemos utilizar a função c() várias formas, lembre-se que a ordem é importante
+# Podemos utilizar a funÃ§Ã£o c() vÃ¡rias formas, lembre-se que a ordem Ã© importante
 # concatenar
 
 pop.first <- c(2525779, 3026003, 3691173)
@@ -128,9 +131,9 @@ pop.all <- c(pop.first, pop.second)
 
 pop.all
 
-# Podemos apresentar elementos específicos do vetor utilizando colchetes [] ,chamados de indexes
+# Podemos apresentar elementos especÃ­ficos do vetor utilizando colchetes [] ,chamados de indexes
 
-# Exibe os índices escolhidos entre colchetes
+# Exibe os Ã­ndices escolhidos entre colchetes
 
 world.pop[2]
 
@@ -138,126 +141,126 @@ world.pop[c(2, 4)]
 
 world.pop[c(4, 2)]
 
-# Também é possível remover elementos na hora da visualização do vetor
+# TambÃ©m Ã© possÃ­vel remover elementos na hora da visualizaÃ§Ã£o do vetor
 
-# Neste caso, não exibe o elemento 3
+# Neste caso, nÃ£o exibe o elemento 3
 world.pop[c(-3)]
 
-# Podemos realizar operações aritméticas com os vetores
+# Podemos realizar operaÃ§Ãµes aritmÃ©ticas com os vetores
 
-# Exemplo: mudanças em todas as variáveis de um vetor
-# Os dados de população foram inseridos no vetor world.pop em mil habitantes
-# Para transformar os dados em milhões de habitantes iremos dividir todo o vetor por 1000
+# Exemplo: mudanÃ§as em todas as variÃ¡veis de um vetor
+# Os dados de populaÃ§Ã£o foram inseridos no vetor world.pop em mil habitantes
+# Para transformar os dados em milhÃµes de habitantes iremos dividir todo o vetor por 1000
 
 pop.million <- world.pop / 1000
 
 pop.million
 
-# Exemplo: cálculo da taxa de crescimento da população com ano-base de 1950
-# A taxa de crescimento é calculada dividindo o valor atribuído a população mundial pelo valor do ano base
-# Ano base: 1950 -> é o primeiro elemento do vetor world.pop
+# Exemplo: cÃ¡lculo da taxa de crescimento da populaÃ§Ã£o com ano-base de 1950
+# A taxa de crescimento Ã© calculada dividindo o valor atribuÃ­do a populaÃ§Ã£o mundial pelo valor do ano base
+# Ano base: 1950 -> Ã© o primeiro elemento do vetor world.pop
 
 pop.rate <- world.pop / world.pop[1]
 
 pop.rate
 
-# Funções
-# As funções geram resultados (outputs) específicos a partir de determinadas entradas (inputs)
-# Algumas funções já foram apresentadas: sqrt(), print(), class(), c()
+# FunÃ§Ãµes
+# As funÃ§Ãµes geram resultados (outputs) especÃ­ficos a partir de determinadas entradas (inputs)
+# Algumas funÃ§Ãµes jÃ¡ foram apresentadas: sqrt(), print(), class(), c()
 
-# Sintaxe padrão -> funcname(input)
+# Sintaxe padrÃ£o -> funcname(input)
 
-# Extensão do vetor
+# ExtensÃ£o do vetor
 length(world.pop)
 
-# Valor mínimo
+# Valor mÃ­nimo
 min(world.pop)
 
-# Valor máximo
+# Valor mÃ¡ximo
 max(world.pop)
 
 # Faixa 
 range(world.pop)
 
-#Média
+#MÃ©dia
 mean(world.pop)
 
-# Média : soma dos elementos do vetor/extensão do vetor
+# MÃ©dia : soma dos elementos do vetor/extensÃ£o do vetor
 sum(world.pop) / length(world.pop)
 
-# Funções podem possuir mais um argumento
+# FunÃ§Ãµes podem possuir mais um argumento
 
-# Na sixtaxe da função é importante definir a ordem
+# Na sixtaxe da funÃ§Ã£o Ã© importante definir a ordem
 # funcname(input1,input2)
 # funcname(input2,input1)
 
-# Também é possivel especificar um nome para os argumentos
+# TambÃ©m Ã© possivel especificar um nome para os argumentos
 # funcname(arg1 = input1, arg2 = input2).
 
-# Na prática - até então apenas inserimos os valores da população mundial em mil habitantes no vetor world.pop
+# Na prÃ¡tica - atÃ© entÃ£o apenas inserimos os valores da populaÃ§Ã£o mundial em mil habitantes no vetor world.pop
 # Vamos inserir os anos como label deste vetor
 
 # 1 passo
-# Gerar um sequência de anos
+# Gerar um sequÃªncia de anos
 
-# Exemplo básico de sequência
-# Função seq()
+# Exemplo bÃ¡sico de sequÃªncia
+# FunÃ§Ã£o seq()
 
 year <- seq(from = 1950, to = 2010, by = 10)
 year
 
-# exemplo 2 para a criação de sequência
+# exemplo 2 para a criaÃ§Ã£o de sequÃªncia
 year2 <- seq(from = 1960, to = 2010, by = 10)
 year2
 
-# Possível alterar valores pelos índices
+# PossÃ­vel alterar valores pelos Ã­ndices
 year2 [c(1, 2)] <- c(1959, 1969)
 year2
 
-# Sequência sem vetores, com intervalos específicos
+# SequÃªncia sem vetores, com intervalos especÃ­ficos
 seq(to = 2010, by = 10, from = 1950)
 seq(from = 2010, to = 1950, by = -10)
 
-# Sequência simples de 1 em 1
+# SequÃªncia simples de 1 em 1
 2008:2012
 
 2012:2008
 
 # Voltando ao exemplo:
-# Vamos nomear os dados atribuídos ao vetor world.pop
+# Vamos nomear os dados atribuÃ­dos ao vetor world.pop
 
-# o vetor ainda não foi nomeado - resposta NULL
+# o vetor ainda nÃ£o foi nomeado - resposta NULL
 names(world.pop)
 
 names(world.pop) <- year
 
 world.pop
 # -------------------------------------------------------------------------------------------------------------------------------
-# Até então inserimos dados de forma manual
-# Na prática utilizamos arquivos de dados quantitativos para fazer nossas análises: chamados de data frame
+# AtÃ© entÃ£o inserimos dados de forma manual
+# Na prÃ¡tica utilizamos arquivos de dados quantitativos para fazer nossas anÃ¡lises: chamados de data frame
 # Software R -> arquivos .csv ou dataR
-# são dados que devem estar apresentados na diposição de uma planilha
+# sÃ£o dados que devem estar apresentados na diposiÃ§Ã£o de uma planilha
 
-# Opção 1
+# OpÃ§Ã£o 1
 # Inserir data frame pelo console do R
-# Necessário verificar em qual dirtetório o R está acessando os seus arquivos
-# Utiliza e função getwd() para visualiza qual o diretório atual
-# o padrão do diretório do R é a pasta Documentos do Windows:  "C:/Users/Ariana/Documents"
+# NecessÃ¡rio verificar em qual dirtetÃ³rio o R estÃ¡ acessando os seus arquivos
+# Utiliza e funÃ§Ã£o getwd() para visualiza qual o diretÃ³rio atual
+# o padrÃ£o do diretÃ³rio do R Ã© a pasta Documentos do Windows:  "C:/Users/Ariana/Documents"
 
 getwd()
 
-# Seu arquivo .csv ou .dataR deve ser neste diretório, caso contário o R não irá acessar
-# Caso seja necessário mudar o diretório utilize a função setwd() especificando o endereço do seu computador
-# que o R deverá acessar
-# Para copiar o endereço do diretório no seu computador utilize o Explorer/Finder e clique na aba superior em qua específica, 
-# uma segunda opção é clicar com o botão esquerdo no arquivo, ir em propriedades e em seguida copiar o endereço
-# disponível em localização
+# Seu arquivo .csv ou .dataR deve ser neste diretÃ³rio, caso contÃ¡rio o R nÃ£o irÃ¡ acessar
+# Caso seja necessÃ¡rio mudar o diretÃ³rio utilize a funÃ§Ã£o setwd() especificando o endereÃ§o do seu computador
+# que o R deverÃ¡ acessar
+# Para copiar o endereÃ§o do diretÃ³rio no seu computador utilize o Explorer/Finder e clique na aba superior em qua especÃ­fica, 
+# uma segunda opÃ§Ã£o Ã© clicar com o botÃ£o esquerdo no arquivo, ir em propriedades e em seguida copiar o endereÃ§o
+# disponÃ­vel em localizaÃ§Ã£o
 
 setwd("C:/Users/bruno/Desktop/R Data (all data)")
 
 # Leitura do arquivo.csv
-# Utilize a função abaixo para carregar o arquivo de dados no RStudio
-# O arquivo deve estar disponibilizado na pasta especificada em setwd() e ter o nome igual ao input da função read.csv
+# Utilize a funÃ§Ã£o abaixo para carregar o arquivo de dados no RStudio
+# O arquivo deve estar disponibilizado na pasta especificada em setwd() e ter o nome igual ao input da funÃ§Ã£o read.csv
 
 UNpop <- read.csv("UNpop.csv")
 
@@ -266,149 +269,149 @@ class(UNpop)
 # Visualiza e abre uma nova aba
 View(UNpop)
 
-# Opção 2
-# A opção Import Dataset no Environment também pode ser utilizada.
+# OpÃ§Ã£o 2
+# A opÃ§Ã£o Import Dataset no Environment tambÃ©m pode ser utilizada.
 # No enviroment (canto direito e superior da tela), clique em "Import Dataset" 
 # Busque a base no seu computador, selecione o arquivo .csv e em seguida clique em "Open"
-# Abrirá uma tela de importação: caso os dados estejam devidamente carregados, clique em Import.
+# AbrirÃ¡ uma tela de importaÃ§Ã£o: caso os dados estejam devidamente carregados, clique em Import.
 # O data frama deve aparecer no seu Enviroment
 
 # -------------------------------------------------------------------------------------------------------------------------------
-# A partir de data frames podemos realizar análises descritivas e exploratórias de dados
-# Este é o primeiro passo para entendermos os dados que estão na nossa disposição no data.frama atualizado
+# A partir de data frames podemos realizar anÃ¡lises descritivas e exploratÃ³rias de dados
+# Este Ã© o primeiro passo para entendermos os dados que estÃ£o na nossa disposiÃ§Ã£o no data.frama atualizado
 
-# Com o uso de várias funções podemos realizar a construção de um sumário
+# Com o uso de vÃ¡rias funÃ§Ãµes podemos realizar a construÃ§Ã£o de um sumÃ¡rio
 
-# Análise do seu data frame
+# AnÃ¡lise do seu data frame
 names(UNpop)
 nrow(UNpop)
 ncol(UNpop)
 ##dim() combina os resultados colunas e linhas
 dim(UNpop)
 
-# Visualização de valores de vetores específicos no Data Frame
+# VisualizaÃ§Ã£o de valores de vetores especÃ­ficos no Data Frame
 UNpop$Variant
 UNpop$Time
 
-# Existe uma função de sumário já disponível
-# Esta função apresenta as principais análises de medidas resumo (posição e dispersão) que iremos utilizar no primeiro bloco
+# Existe uma funÃ§Ã£o de sumÃ¡rio jÃ¡ disponÃ­vel
+# Esta funÃ§Ã£o apresenta as principais anÃ¡lises de medidas resumo (posiÃ§Ã£o e dispersÃ£o) que iremos utilizar no primeiro bloco
 # do nosso curso
 summary(UNpop)
 
 # -------------------------------------------------------------------------------------------------------------------------------
-# Gráfico
+# GrÃ¡fico
 
-# Para apresentar representações gráficas no R é necessário instalar pacotes específicos 
-# Estes pacotes possuem uma série de funções, data frame que nós auxiliarão nesta atividade
+# Para apresentar representaÃ§Ãµes grÃ¡ficas no R Ã© necessÃ¡rio instalar pacotes especÃ­ficos 
+# Estes pacotes possuem uma sÃ©rie de funÃ§Ãµes, data frame que nÃ³s auxiliarÃ£o nesta atividade
 
-# tidyverse é um pacote de dados que inclui uma série de bibliotecas utilizadas na análise de dados
+# tidyverse Ã© um pacote de dados que inclui uma sÃ©rie de bibliotecas utilizadas na anÃ¡lise de dados
 # ggplot2, dplyr, tidyr, readr, purr, tibble, string, forcats
-# Para maiores informações sobre tidy verse, consulte: R for data science -> Chapter 1 (Wickham & Grolemund, 2018)
+# Para maiores informaÃ§Ãµes sobre tidy verse, consulte: R for data science -> Chapter 1 (Wickham & Grolemund, 2018)
 # Ou consulte: https://www.tidyverse.org/packages/
 
-# Pacotes são instalados uma única vez no R
-# função para instalar pacotes install.packages(input)
+# Pacotes sÃ£o instalados uma Ãºnica vez no R
+# funÃ§Ã£o para instalar pacotes install.packages(input)
 # Existem algumas formas de instalar alguns pacotes
 
 install.packages("tidyverse")
 # ou
 install.packages("ggplot2")
 
-# Porém, mesmo com o pacote instalado, você deve avisar ao R qual pacote irá utilizar durante o seu trabalho atual
-# Assim, sempre é necessário especificar a biblioteca a ser utilizada na presente análise
-# A função para selecionar a biblioteca é library(nome da biblioteca)
+# PorÃ©m, mesmo com o pacote instalado, vocÃª deve avisar ao R qual pacote irÃ¡ utilizar durante o seu trabalho atual
+# Assim, sempre Ã© necessÃ¡rio especificar a biblioteca a ser utilizada na presente anÃ¡lise
+# A funÃ§Ã£o para selecionar a biblioteca Ã© library(nome da biblioteca)
 library(tidyverse)
 
-# Do ponto de vista didático, estamos selecionando a bliblioteca agora
-# Na prática, o script começa com a  listagem de todas as bibliotecas
+# Do ponto de vista didÃ¡tico, estamos selecionando a bliblioteca agora
+# Na prÃ¡tica, o script comeÃ§a com a  listagem de todas as bibliotecas
 
-# Gráfico utilizando ggplot
+# GrÃ¡fico utilizando ggplot
 # sintaxe 1
 
 ggplot(data = UNpop)+
   geom_point(mapping = aes(x = Time,y = PopTotal))
 
-# A sintaxe acima plota no canto inferior direito da tela um Gráfico de 
-# pontos sendo o eixo y a população e o eixo x os anos.
+# A sintaxe acima plota no canto inferior direito da tela um GrÃ¡fico de 
+# pontos sendo o eixo y a populaÃ§Ã£o e o eixo x os anos.
 
-# As sintaxes podem variar, porém a essencia é sempre a mesma
+# As sintaxes podem variar, porÃ©m a essencia Ã© sempre a mesma
 
-# gráfico - sintaxe 2
+# grÃ¡fico - sintaxe 2
 ggplot(data = UNpop, mapping = aes(x = Time,y = PopTotal))+
   geom_point ()
 
-# Gráficos sobrespostos - é possível sobrepor todos gráficos, neste caso
-# estamos apresentando um gráfico de linha e um de ponto
+# GrÃ¡ficos sobrespostos - Ã© possÃ­vel sobrepor todos grÃ¡ficos, neste caso
+# estamos apresentando um grÃ¡fico de linha e um de ponto
 ggplot(data = UNpop, mapping = aes(x = Time,y = PopTotal))+
   geom_point ()+
   geom_line()
 
-# Algumas opções para melhorar os aspectos de apresentação dos gráficos
+# Algumas opÃ§Ãµes para melhorar os aspectos de apresentaÃ§Ã£o dos grÃ¡ficos
 # Para mais ideias consulte: Wickham & Grolemund, 2018 R for data science -> Chapter 1
 ggplot(data = UNpop)+
   geom_line (mapping = aes(x = Time,y = PopTotal), color = "blue")+
-    xlab("Popula��o Mundial") +
+    xlab("População Mundial") +
     ylab("Anos")
 
 # -------------------------------------------------------------------------------------------------------------------------------
 # Finalizando a aula
-# No final é possível salvar o trabalho que foi realizado em um arquivo RData utilizando a função apresentada
+# No final Ã© possÃ­vel salvar o trabalho que foi realizado em um arquivo RData utilizando a funÃ§Ã£o apresentada
 
 save.image(save.image("C:/Users/bruno/Desktop/R Data (all data)"))
 
 # -------------------------------------------------------------------------------------------------------------------------------
-# Calcule a taxa de crescimento da população entre os anos apresentados no
-# data frame e utilizando os conhecimetnos até 
-# então aprendidos em R.
+# Calcule a taxa de crescimento da populaÃ§Ã£o entre os anos apresentados no
+# data frame e utilizando os conhecimetnos atÃ© 
+# entÃ£o aprendidos em R.
 
-# Fórmula da taxa de crescimento:
-# Taxa de crescimento (%) = [(População no período t1 - População no 
-# período t0)/População no período t0] * 100 
+# FÃ³rmula da taxa de crescimento:
+# Taxa de crescimento (%) = [(PopulaÃ§Ã£o no perÃ­odo t1 - PopulaÃ§Ã£o no 
+# perÃ­odo t0)/PopulaÃ§Ã£o no perÃ­odo t0] * 100 
 
-# O livro do Imai apresenta o cálculo da taxa de crescimento (em relação ao
-# período anterior) utilizando vetores
-# A solução é apresentada abaixo:
+# O livro do Imai apresenta o cÃ¡lculo da taxa de crescimento (em relaÃ§Ã£o ao
+# perÃ­odo anterior) utilizando vetores
+# A soluÃ§Ã£o Ã© apresentada abaixo:
 
-# Solução Imai
+# SoluÃ§Ã£o Imai
 pop.increase <- world.pop[-1] - world.pop[-7]
 pop.increase
 percent.increase <- (pop.increase / world.pop[-7]) * 100
 percent.increase
 
-# Você foi capaz de entender? 
+# VocÃª foi capaz de entender? 
 # Pense antes de continuar =)
 
-# O raciocínio envolve alguns passos:
+# O raciocÃ­nio envolve alguns passos:
 
 # 1. O que siginfica os vetores?
 world.pop[-1] - world.pop[-7]
 
 # O primeiro termo utilizado refere-se ao vetor world.pop sem o primeiro 
-# elemento, utilizando índices para fazer isto
+# elemento, utilizando Ã­ndices para fazer isto
 
-# O segundo termo refere-se ao vetor world.pop sem o último elemento: world.pop[-7]
-# Você é capaz de responder o que ele calcula neste ponto?
+# O segundo termo refere-se ao vetor world.pop sem o Ãºltimo elemento: world.pop[-7]
+# VocÃª Ã© capaz de responder o que ele calcula neste ponto?
 
 
-# População de um ano - População do outro ano = Aumento da população de um ano para outro
+# PopulaÃ§Ã£o de um ano - PopulaÃ§Ã£o do outro ano = Aumento da populaÃ§Ã£o de um ano para outro
 
-# Para chegar na porcentagem: necessário dividir o crescimento absoluto de um ano para outro
+# Para chegar na porcentagem: necessÃ¡rio dividir o crescimento absoluto de um ano para outro
 percent.increase <- (pop.increase / world.pop[-7]) * 100
 percent.increase
 
-#Se ainda não está claro, veja a taxa de crescimento calculada de uma forma mais manual
-# Ao final volte a solução apresentada pelo Imai
+#Se ainda nÃ£o estÃ¡ claro, veja a taxa de crescimento calculada de uma forma mais manual
+# Ao final volte a soluÃ§Ã£o apresentada pelo Imai
 
-# Solução 2:
+# SoluÃ§Ã£o 2:
 
-# Taxa de crescimento de 1960 -> [(População 1960 - População 1950)/População 1950]*100
-# Taxa de crescimento de 1970 -> [(População 1970 - População 1960)/População 1960]*100
-# Taxa de crescimento de 1980 -> [(População 1980 - População 1970)/População 1970]*100
-# Taxa de crescimento de 1990 -> [(População 1990 - População 1980)/População 1980]*100
-# Taxa de crescimento de 2000 -> [(População 2000 - População 1990)/População 1990]*100
-# Taxa de crescimento de 2010 -> [(População 2010 - População 2000)/População 2000]*100
+# Taxa de crescimento de 1960 -> [(PopulaÃ§Ã£o 1960 - PopulaÃ§Ã£o 1950)/PopulaÃ§Ã£o 1950]*100
+# Taxa de crescimento de 1970 -> [(PopulaÃ§Ã£o 1970 - PopulaÃ§Ã£o 1960)/PopulaÃ§Ã£o 1960]*100
+# Taxa de crescimento de 1980 -> [(PopulaÃ§Ã£o 1980 - PopulaÃ§Ã£o 1970)/PopulaÃ§Ã£o 1970]*100
+# Taxa de crescimento de 1990 -> [(PopulaÃ§Ã£o 1990 - PopulaÃ§Ã£o 1980)/PopulaÃ§Ã£o 1980]*100
+# Taxa de crescimento de 2000 -> [(PopulaÃ§Ã£o 2000 - PopulaÃ§Ã£o 1990)/PopulaÃ§Ã£o 1990]*100
+# Taxa de crescimento de 2010 -> [(PopulaÃ§Ã£o 2010 - PopulaÃ§Ã£o 2000)/PopulaÃ§Ã£o 2000]*100
 
-# Solução:
+# SoluÃ§Ã£o:
 tx_cresc_60 <- ((world.pop[2] - world.pop[1]) / world.pop[1])*100
 tx_cresc_70 <- ((world.pop[3] - world.pop[2]) / world.pop[2])*100
 tx_cresc_80 <- ((world.pop[4] - world.pop[3]) / world.pop[3])*100
